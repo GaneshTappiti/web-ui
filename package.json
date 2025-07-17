@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Browser Use Web UI - A Gradio-based web interface for browser automation",
   "scripts": {
-    "dev": "python webui.py --ip 127.0.0.1 --port 8080",
-    "dev-auto": "python webui.py --ip 127.0.0.1 --auto-port",
+    "dev": "python webui.py --ip 127.0.0.1 --auto-port",
+    "dev-fixed": "python webui.py --ip 127.0.0.1 --port 8080",
+    "dev-port": "python webui.py --ip 127.0.0.1 --port",
     "start": "python webui.py --auto-port",
     "install-deps": "pip install -r requirements.txt",
     "install-browsers": "python -m playwright install chromium --with-deps"
